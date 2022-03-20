@@ -1,0 +1,48 @@
+<!--TAGS DE OBJETOS-->
+<!doctype html>
+<html>
+<head>
+    <title>Tags de Objeto</title>
+</head>
+<body>
+    <h1>Tags de Objetos</h1>
+    <!--<form method="post" action="gravar.php"></form>-->
+    <form>
+        nome:<input type="text" id="txtNome" required 
+        placeholder="digite seu nome completo" 
+        size="80" pattern="[A-z\s]{6,50}" />
+        <br/>
+        email:<input type="email" id="txtEmail" required
+        placeholder="digite seu email" size="70" /><br/>
+        <br/>
+        idade:<input type="number" id="txtIdade" required
+        min="10" max="80" /><br/>
+        altura<input type="number" id="txtAltura" required
+        min="0.5" max="2.5" step="0.01" /><br/>
+        senha:<input type="password" id="senha" required 
+        pattern="[A-z0-9]{6,10}" /><br/>
+        data:<input type="date" id="dtNascimento" required /><br/>
+        hora:<input type="time" id="txtHora" /><br/>
+        nota:<input type="range" id="txtNota" min="1" max="10" /><br/>
+        cursos:<br/>
+        <input type="checkbox" id="c1" />Cuso 1<br/>
+        <input type="checkbox" id="c2" />Cuso 2<br/>
+        <input type="checkbox" id="c3" />Cuso 3<br/>
+        periodo:<br/>
+        <input type="radio" id="o1" name="per" />Manhã
+        <input type="radio" id="o2" name="per" />Tarde
+        <input type="radio" id="o3" name="per" />Noite<br/>
+        unidade:<br/>
+        <select id="unidade">
+            <option value="1">FATEC Ipiranga</option>
+            <option value="2">FATEC SP</option>
+            <option value="3">FATEC SBC</option>
+            <option value="4">FATEC Diadema</option>
+        </select><br/>
+        mensagem:
+        <textarea id="msg" cols="50" rows="5">
+        </textarea>
+        <button id="btn1">Enviar</button>
+    </form>
+</body>
+</html>
